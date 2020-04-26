@@ -18,8 +18,13 @@ tested only on 1 machine (ubuntu 16+kde)
 
 1. bash hebfix
 ================
+Fixes accidental hebrew commands.
 
-before install:
+limitation: there's no autocomplete in bash. An alternative solution could be - creating symlinks in hebrew to EVERY command. However that's not feasible with bash built-in functions...
+
+Install instructions:
+
+Before install:
 ---------------
 the bash hook mechanism can't handle aliases.
 Solution:
@@ -39,7 +44,6 @@ How to install:
 
 2. GUI textbox:
 =================
-
 Not implemented (half backed, really).
 This one uses keyboard commands, sendkeys alternatives, and clipboard manipulations.
 Written in python
@@ -57,6 +61,7 @@ user@machine $ ךד
 l ךד: command not found
 
 הפתרון שלי כרגע:
+-------------------
 חיבור hook ל-BASH שפועל אחרי הקלדת הפקודה אבל לפני ההרצה שלה
 קריאה לתוכנית חיצונית (במקרה שלי פייתון) שבודקת האם הפקודה מתחילה בעברית, ואז מסיקה שהמקלדת הפוכה, ומחליפה את האותיות לפי מיפוי מקלדות.
 דחיפה של הפקודה המתוקנת (לפי הצורך)
