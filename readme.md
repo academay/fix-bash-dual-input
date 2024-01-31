@@ -67,4 +67,4 @@ l ךד: command not found
 דחיפה של הפקודה המתוקנת (לפי הצורך)
 
 
-
+edi2shula
